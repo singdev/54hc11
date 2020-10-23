@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choix du type | Voug'App</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voug'App</title>
+
+	<meta name="theme-color" content="#030946">
+
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			font-family: 'Quicksand', sans-serif;
+			background-image: url(assets/img/fond-1-s.jpg);
+			background-size: cover;
+			color: white;
+		}
+
+		main {
+			background-color: rgb(0, 0, 0, .7);
+		}
+	</style>
 </head>
-<body>
-    <h1>Type de transport</h1>
-    <a href="step-3.html">Avion</a>
-    <a href="step-3.html">Bateau</a>
-    <a href="step-3.html">Voiture</a>
-    <a href="step-3.html">Train</a>
+
+<body class="overflow-hiddene bg-white">
+	<main class="h-screen">
+		<div class="pb-1 p-3 border rounded-b-lg">
+			<div class="flex justify-between">
+				<a href="index.html">
+					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+						</path>
+					</svg>
+				</a>
+				<span class="font-bold">VOUGAPP</span>
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+					</path>
+				</svg>
+			</div>
+			<h1 class="text-center text-lg capitalize mt-2">Transport ferroviaire</h1>
+		</div>
+		<p class="text-center mt-5 mb-3">CHOISISSEZ UNE PROVINCE DE DEPART</p>
+		<div class="flex flex-col px-12">
+			<a href="step-3.html?province=1" class="text-center py-2 bg-gray-200 text-black rounded my-2">Estuaire</a>
+			<a href="step-3.html?province=1"
+				class="text-center py-2 bg-gray-200 text-black rounded my-2">Haut-Ogooué</a>
+			<a href="step-3.html?province=1"
+				class="text-center py-2 bg-gray-200 text-black rounded my-2">Moyen-Ogooué</a>
+			<a href="step-3.html?province=1"
+				class="text-center py-2 bg-gray-200 text-black rounded my-2">Ogooué-Ivindo</a>
+			<a href="step-3.html?province=1"
+				class="text-center py-2 bg-gray-200 text-black rounded my-2">Ogooué-Lolo</a>
+		</div>
+	</main>
+	<div class="fixed bottom-0 mt-10">
+		<img src="https://www.airtel.ga/assets/images/opco/Covidups_App%20Banner_FRE-01.jpg" alt="pub gabon telecom">
+        </div>
 </body>
+
 </html>
