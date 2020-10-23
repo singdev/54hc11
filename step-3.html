@@ -29,7 +29,7 @@
 	<main class="h-screen">
 		<div class="pb-1 p-3 border rounded-b-lg">
 			<div class="flex justify-between">
-				<a href="index.html">
+				<a href="step-2.html">
 					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 						xmlns="http://www.w3.org/2000/svg">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
@@ -46,7 +46,7 @@
 			<h1 class="text-center text-lg uppercase mt-2">Validation de votre voyage</h1>
 		</div>
 		<p class="text-center mt-5 mb-3">Informations relatives au voyage</p>
-		<form class="flex flex-col px-12">
+		<form action="step-4.html" class="flex flex-col px-12">
 			<label for="">Gare de départ</label>
 			<select name="" id="" class="px-2 py-2 text-black mb-4">
                 <option value="Owendo">Owendo</option>
@@ -55,7 +55,7 @@
                 <option value="Mbel">Mbel</option>
                 <option value="Oyan">Oyan</option>
             </select>
-            <label for="">Gare d'arrivée</label>
+			<label for="">Gare d'arrivée</label>
 			<select name="" id="" class="px-2 py-2 text-black mb-4">
                 <option value="Ntoum">Ntoum</option>
                 <option value="Andeme">Andem</option>
@@ -63,17 +63,22 @@
                 <option value="Oyan">Oyan</option>
             </select>
 
-            <label for="">Classe</label>
+			<label for="">Classe</label>
 			<select name="" id="" class="px-2 py-2 text-black mb-4">
                 <option value="Ntoum">2e Classe</option>
                 <option value="Andeme">1ere Classe</option>
                 <option value="Mbel">VIP</option>
             </select>
+			<label for="">Date de départ</label>
+			<input type="date" class="px-2 py-2 text-black mb-4 block">
+
+			<input class="block px-2 py-2 text-black mb-4" type="submit" value="VALIDER">
+
 		</form>
 	</main>
 	<div class="fixed bottom-0 mt-10">
 		<img src="https://www.airtel.ga/assets/images/opco/Covidups_App%20Banner_FRE-01.jpg" alt="pub gabon telecom">
-        </div>
+    </div>
 </body>
 
 </html>
