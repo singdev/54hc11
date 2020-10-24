@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voug'App</title>
+
+	<meta name="theme-color" content="#030946">
+
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			font-family: 'Quicksand', sans-serif;
+			background-image: url(assets/img/fond-1-s.jpg);
+			background-size: cover;
+			color: white;
+		}
+
+		main {
+			background-color: rgb(0, 0, 0, .7);
+		}
+	</style>
+</head>
+
+<body class="bg-white">
+	<main class="mb-48">
+		<div class="pb-1 p-3 border rounded-b-lg">
+			<div class="flex justify-between">
+				<a href="step-2.html">
+					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+						</path>
+					</svg>
+				</a>
+				<img class="h-16" src="assets/img/logo.png" alt="logo">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+					</path>
+				</svg>
+			</div>
+			<h1 class="text-center text-lg uppercase mt-2">Information du voyage</h1>
+		</div>
+		<p class="text-center mt-5 mb-3">Informations relatives au voyage</p>
+		<form action="step-4.html" class="flex flex-col px-12">
+			<label for="">Gare de départ</label>
+			<select name="" id="" class="px-2 py-2 text-black mb-4">
+                <option value="Owendo">Owendo</option>
+                <option value="Ntoum">Ntoum</option>
+                <option value="Andeme">Andem</option>
+                <option value="Mbel">Mbel</option>
+                <option value="Oyan">Oyan</option>
+            </select>
+			<label for="">Gare d'arrivée</label>
+			<select name="" id="" class="px-2 py-2 text-black mb-4">
+                <option value="Ntoum">Ntoum</option>
+                <option value="Andeme">Andem</option>
+                <option value="Mbel">Mbel</option>
+                <option value="Oyan">Oyan</option>
+            </select>
+
+			<label for="">Train</label>
+			<select name="" id="" class="px-2 py-2 text-black mb-4">
+                <option value="Ntoum">Omnibus</option>
+                <option value="Andeme">Express</option>
+            </select>
+
+			<label for="">Classe</label>
+			<select name="" id="" class="px-2 py-2 text-black mb-4">
+                <option value="Ntoum">2e Classe</option>
+                <option value="Andeme">1ere Classe</option>
+                <option value="Mbel">VIP</option>
+            </select>
+
+			<label for="">Date de départ</label>
+			<input type="date" class="px-2 py-2 text-black mb-4 block w-full" placeholder="23/10/2020">
+
+			<label class="mt-3 font-bold text-md text-center" for="">Montant à payer</label>
+			<span class=" text-center">30.400 F CFA</span>
+
+			<input class="block px-2 py-2 text-black my-4 text-center" type="submit" value="CONTINUER">
+		</form>
+	</main>
+	<div class="fixed bottom-0 mt-10">
+		<img src="https://www.airtel.ga/assets/images/opco/Covidups_App%20Banner_FRE-01.jpg" alt="pub gabon telecom">
+    </div>
+</body>
+
+</html>

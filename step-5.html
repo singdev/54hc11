@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voug'App</title>
+
+	<meta name="theme-color" content="#030946">
+
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			font-family: 'Quicksand', sans-serif;
+			background-image: url(assets/img/fond-1-s.jpg);
+			background-size: cover;
+			color: white;
+		}
+
+		main {
+			background-color: rgb(0, 0, 0, .7);
+		}
+	</style>
+</head>
+
+<body class="overflow-hiddene bg-white">
+	<main class="h-screend">
+		<div class="pb-1 p-3 border rounded-b-lg">
+			<div class="flex justify-between">
+				<a href="step-4.html">
+					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+						</path>
+					</svg>
+				</a>
+				<img class="h-16" src="assets/img/logo.png" alt="logo">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+					</path>
+				</svg>
+			</div>
+			<h1 class="text-center text-lg uppercase mt-2">RÉCAPITULATIF</h1>
+		</div>
+		<p class="text-center mt-5 mb-3">Vérification des relatives au voyage</p>
+		<form action="step-6.html" class="flex flex-col px-12">
+
+			<div class="flex justify-between items-center">
+				<div>
+					<label class="mt-3 font-bold text-md" for="">Gare de départ</label>
+					<span>Owendo</span>
+				</div>
+				<svg class="w-8 h-8 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+				</svg>
+				<div class="text-right">
+					<label class="mt-3 font-bold text-md" for="">Gare d'arrivée</label>
+					<span>Moanda</span>
+				</div>
+			</div>
+
+			<hr class="mt-3">
+
+			<div class="mt-3 flex justify-between">
+				<div class="flex flex-col">
+					<label class="font-bold text-md" for="">Classe</label>
+					<span>2e Classe</span>
+				</div>
+				<div class="flex flex-col text-right">
+					<label class="font-bold text-md" for="">Montant à payer</label>
+					<span>30.400 F</span>
+				</div>
+			</div>
+
+			<hr class="mt-3">
+
+			<label class="mt-3 font-bold text-md" for="">Date de départ</label>
+			<span>24/10/2020</span>
+
+			<hr class="mt-3">
+
+			<label class="mt-3 font-bold text-md" for="">Voyageur(s)</label>
+			<span>MOUSSAVOU Georges</span>
+            <span>Homme - 24 ans</span>
+
+			<label class="mt-3 font-bold text-md mt-5 text-center text-lg" for="">Mode de paiement</label>
+			<div class="flex justify-between ">
+				<a href="step-6.html"><img class="w-32 h-32 rounded" src="https://sportpari.cm/upload/iblock/778/15.png" alt=""></a>
+                <a href="step-6.html"><img class="w-32 h-32 rounded" src="https://ibemgabon.com/web/ibmonline/web/image%20site/mobicach.png" alt=""></a>
+            </div>
+
+		</form>
+	</main>
+	<div class="fixed bottom-0 mt-10 hidden">
+		<img src="https://www.airtel.ga/assets/images/opco/Covidups_App%20Banner_FRE-01.jpg" alt="pub gabon telecom">
+    </div>
+</body>
+
+</html>

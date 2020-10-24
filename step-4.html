@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voug'App</title>
+
+	<meta name="theme-color" content="#030946">
+
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			font-family: 'Quicksand', sans-serif;
+			background-image: url(assets/img/fond-1-s.jpg);
+			background-size: cover;
+			color: white;
+		}
+
+		main {
+			background-color: rgb(0, 0, 0, .7);
+		}
+	</style>
+</head>
+
+<body class="overflow-hiddene bg-white">
+	<main class="h-screenf mb-32">
+		<div class="pb-1 p-3 border rounded-b-lg">
+			<div class="flex justify-between">
+				<!--Bouton retour-->
+				<a href="step-3.html">
+					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+						</path>
+					</svg>
+				</a>
+				<img class="h-16" src="assets/img/logo.png" alt="logo">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+					</path>
+				</svg>
+			</div>
+			<h1 class="text-center text-lg uppercase mt-2">Informations personnelles </h1>
+		</div>
+		<p class="text-center mt-5 mb-3">Civilité</p>
+		<form action="step-5.html" class="flex flex-col px-12">
+			<label for="">Noms</label>
+			<input class="p-2 text-black" type="text" value="MOUSSAVOU">
+			
+            <label class="mt-4" for="">Prénoms</label>
+			<input class="p-2 text-black" type="text" value="Georges">
+
+			<label class="mt-4" for="">Sexe</label>
+			<select name="" id="" class="px-2 py-2 text-black">
+                <option>Homme</option>
+                <option>Femme</option>
+            </select>
+
+            <label class="mt-4" for="">Téléphone</label>
+			<input class="p-2 text-black" type="tel" value="074335690">
+
+			<label class="mt-4" for="">Age</label>
+			<input class="p-2 text-black" type="number" value="24">
+
+			<label class="mt-4" for="">Nature de la pièce</label>
+			<select name="" id="" class="px-2 py-2 text-black">
+                <option>CNI</option>
+                <option>Passeport</option>
+                <option>Permis de conduire</option>
+                <option>Carte scolaire</option>
+            </select>
+
+			<label class="mt-4" for="">Nationalité</label>
+			<input class="p-2 text-black" type="text" value="Gabonaise">
+
+			<input class="block mt-4 px-2 py-2 text-black my-5 text-center" type="submit" value="VALIDER">
+
+			<a class=" my-5 bg-blue-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center justify-center"
+				href="step-4.html">
+				<svg class="fill-current w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+				</svg>
+				<span>Ajouter un voyageur</span>
+			</a>
+		</form>
+
+	</main>
+	<div class="fixed bottom-0 mt-10">
+		<img src="https://www.airtel.ga/assets/images/opco/Covidups_App%20Banner_FRE-01.jpg" alt="pub gabon telecom">
+    </div>
+</body>
+
+</html>
