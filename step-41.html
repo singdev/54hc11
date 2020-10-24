@@ -49,22 +49,22 @@
 		<p class="text-center mt-5 mb-3">Civilité</p>
 		<form action="step-5.html" class="flex flex-col px-12">
 			<label for="">Noms</label>
-			<input class="p-2 text-black" id="nom" type="text" value="OGANDAGA">
+			<input class="p-2 text-black" id="nom" type="text" value="PISSAMA">
 
 			<label class="mt-4" for="">Prénoms</label>
-			<input class="p-2 text-black" id="prenom" type="text" value="Snap">
+			<input class="p-2 text-black" id="prenom" type="text" value="Jessica">
 
 			<label class="mt-4" for="">Sexe</label>
 			<select name="" id="sexe" class="px-2 py-2 text-black">
                 <option>Homme</option>
-                <option>Femme</option>
+                <option selected>Femme</option>
             </select>
 
 			<label class="mt-4" for="">Téléphone</label>
 			<input class="p-2 text-black" id="telephone" type="tel" value="074335690">
 
 			<label class="mt-4" for="">Age</label>
-			<input class="p-2 text-black" type="number" value="33">
+			<input class="p-2 text-black" type="number" value="25">
 
 			<label class="mt-4" for="">Nature de la pièce</label>
 			<select name="" id="" class="px-2 py-2 text-black">
@@ -76,10 +76,18 @@
 
 			<label class="mt-4" for="">Nationalité</label>
 			<input class="p-2 text-black" type="text" value="Gabonaise">
+
+			<label class="mt-4" for="">Classe</label>
+			<select name="" id="" class="px-2 py-2 text-black mb-4">
+                <option value="Andeme">1ere Classe</option>
+                <option value="Ntoum">2e Classe</option>
+                <option value="Mbel">VIP</option>
+            </select>
+            
 			<input class="block mt-4 px-2 py-2 text-black my-5 text-center" type="submit" value="VALIDER">
 
 			<a class=" my-5 bg-blue-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center justify-center"
-				href="step-41.html">
+				href="step-4.html">
 				<svg class="fill-current w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 					xmlns="http://www.w3.org/2000/svg">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -93,24 +101,6 @@
 	<div class="fixed bottom-0 mt-10">
 		<img src="https://www.airtel.ga/assets/images/opco/Covidups_App%20Banner_FRE-01.jpg" alt="pub gabon telecom">
     </div>
-
-		<script>
-			let profils = [
-                {nom: "NGOUMBA", prenom: "Hortense", sexe: "Femme", telephone: "066341945"},
-                {nom: "NDONG", prenom: "Sebastien", sexe: "Homme", telephone: "074344927"},
-                {nom: "MBA", prenom: "Jules", sexe: "Homme", telephone: "062341928"},
-                {nom: "GOUNDA", prenom: "Sarah", sexe: "Femme", telephone: "077321979"},
-                {nom: "MBOUMBA", prenom: "Julie", sexe: "Femme", telephone: "074344950"},
-                {nom: "NZIENGUI", prenom: "Arsene", sexe: "Homme", telephone: "062342941"},
-                {nom: "ABANGA", prenom: "Pauline", sexe: "Femme", telephone: "065341842"},
-                {nom: "NKOULOU", prenom: "Brice", sexe: "Homme", telephone: "060349943"}
-            ]
-            let prof = profils[Math.floor(Math.random() * profils.length)];
-            /*document.querySelector("#nom").value = prof.nom;
-            document.querySelector("#prenom").value = prof.prenom;
-            document.querySelector("#sexe").value = prof.sexe;
-            document.querySelector("#telephone").value = prof.telephone;*/
-		</script>
 </body>
 
 </html>
